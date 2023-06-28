@@ -4,18 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css" />
-    <title>To Do List</title>
+    <title>To-Do List</title>
   </head>
   <body>
     <div class="container">
       <div id="top">
-        <h1>Edmund's To Do List!</h1>
+        <div id="logo">To-Do List</div>
+        <div id="navbar">
+          <div class="toggle">
+
+          </div>
+          <a href="#home" class="active">
+            <i class='bx bx-home-alt'></i>
+            Home
+          </a>
+          <a href="#github" class="active">
+            <i class='bx bxl-github'></i>
+            My GitHub
+          </a>
+        </div>
       </div>
       <div id="middle">
-        <input id="input" type="text" />
-        <button id="add">+</button>
-        <div class="list" id="listContainer"></div>
+        <div class="inputContainer">
+          <input id="input" type="text" placeholder="Add To-Do..." />
+          <span>
+            <button id="add" onclick="newToDo()">+</button>
+          </span>
+        </div>
+        <div class="listContainer">
+          <ul id="todos">
+            <li>To-Do 1</li>
+            <li>To-Do 2</li>
+            <li>To-Do 3</li>
+          </ul>
+        </div>
       </div>
       <div id="bottom"></div>
     </div>
