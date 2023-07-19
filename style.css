@@ -51,7 +51,7 @@ body {
 }
 
 #input {
-  width: 28rem;
+  width: 40rem;
   font-size: 1.5rem;
   border: 3px solid #333333;
   border-radius: 0.4rem;
@@ -93,8 +93,11 @@ ul li {
   font-size: 2rem;
   user-select: none;
   cursor: pointer;
-  padding: 12px 8px 12px 50px;
+  padding: 12px 8px 22px 50px;
   position: relative;
+  background: rgba(145, 145, 145, 0.7);
+  height: 1.5rem;
+  border-radius: 1rem;
 }
 
 ul li::before {
@@ -106,17 +109,29 @@ ul li::before {
   background-image: url(icons/square-regular-24.png);
   background-size: cover;
   left: 0.8rem;
+  bottom: 0.9rem;
 }
 
 ul li:hover::before {
-  opacity: 40%;
+  opacity: 60%;
 }
 
 ul li.done {
-  color: #869094;
+  color: #b6b6b6;
   text-decoration: line-through;
 }
 
 ul li.done::before {
   background-image: url(icons/check-square-regular-24.png);
+}
+
+ul li span {
+  position: absolute;
+  top: 1.2rem;
+  right: 0;
+  padding-right: 1rem;
+}
+
+ul li span:hover {
+  color: #9c1431;
 }
